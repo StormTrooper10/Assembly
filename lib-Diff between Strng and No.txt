@@ -1,0 +1,30 @@
+
+;	string: "255"		=> Memory Requirement: 4Bytes
+;	Int : 255			=> Mem Req: 1 Byte
+;
+Memory Picture of string "255"
+Bytes
+ 1		   2		3		4
+-------- -------- -------- --------
+00110010 00110101 00110101 00000000
+50		 53		  53	   0
+
+Mem Picture of int 255
+Byte 
+1
+--------
+11111111
+
+
+String "65535"  => Mem Req: 6 Bytes
+Int 65535		=> Mem Req: 2 Bytes
+
+
+String "4294967296" => 11 Bytes
+Int 4294967296  => Mem Req: 4 Bytes
+
+You cannot do arithmetics with a number stored in string format
+string "80"
+Int 80
+
+80 x 7
